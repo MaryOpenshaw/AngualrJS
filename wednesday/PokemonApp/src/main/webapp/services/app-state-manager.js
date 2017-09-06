@@ -3,14 +3,14 @@
 (function () {
 
     angular.module('pokemonSite').config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/battle");
+        $urlRouterProvider.otherwise("battle");
 
 
         $stateProvider.state("battle", {
             url: "/battle",
             templateUrl: "app/feature/PokeBattler/pokeBattle.html"
         }).state("search", {
-            url:"search",
+            url:"/search",
             templateUrl:"app/feature/PokeSearch/pokeSearch.html"
         }).state("box", {
             url: "/box",

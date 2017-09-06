@@ -1,24 +1,25 @@
 <div ng-controller="SearchController as ctrl">
-   <link href="pokeSearch.css">
+    <link href="pokeSearch.css">
     <h1> this is the pokemon search page</h1>
-
+<!--
     <input type="text" name="search">
+
     <button ng-click>Search</button>
-
-
+-->
     <table>
         <tr>
             <th>Basic Sprite</th>
             <th>Pokemon Name</th>
             <th>Pokemon Type(S)</th>
         </tr>
-        <tr><td></td>
-            <td></td>
-            <td></td>
+        <tr>
+            <td>{{ctrl.pokemon['sprites:front_default']}}</td>
+            <td>{{ctrl.pokemon ['name']}}</td>
+            <td>{{ctrl.pokemon['type[1]']}}</td>
         </tr>
     </table>
-<!--
-<button> save Pokemon</button>
--->
+    <!--
+        <button> save Pokemon</button>
+    -->
 
 </div>
