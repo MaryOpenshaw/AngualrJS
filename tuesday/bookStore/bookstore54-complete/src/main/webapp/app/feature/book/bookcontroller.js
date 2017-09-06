@@ -1,6 +1,6 @@
 (function() {
 
-    var BookController =  function(service)
+    var BookController =  function( doSortService)
     {
         var vm = this;
 
@@ -24,8 +24,7 @@
             'Genre': 'Horror',
             'Published': '1984'
         }];
-
-      vm.service.doSort();
+        doSortService.doSort();
     };
-    angular.module('bookStore').controller('BookController','service', [service.doSort, BookController]);
+    angular.module('bookStore').controller('BookController', [BookController, doSortService]);
 }());

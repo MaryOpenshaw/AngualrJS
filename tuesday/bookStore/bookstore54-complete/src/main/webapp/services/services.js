@@ -1,10 +1,16 @@
 (function() {
-    angular.module('bookStore').service('doSort', [doSort]);
+    angular.module('bookStore').service('doSortService', [doSortServices]);
+
+    var doSortService =function() {
 
 
-    vm.doSort = function()
-{
-    vm.sortby = 'Title';
-    vm.reverse= !vm.reverse
-};
+    this.doSort = function()
+    this.sortBy = 'titel';
+    this.reverse = this.reverse;
+    };
+    angular.module('bookStore').service('doSortService', [doSortServices]);
 }());
+
+
+
+

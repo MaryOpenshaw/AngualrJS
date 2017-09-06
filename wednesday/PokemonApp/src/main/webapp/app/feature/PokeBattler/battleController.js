@@ -1,10 +1,11 @@
 (function() {
 
-    var battleController =  function() {
+    var BattleController =  function() {
         var vm = this;
     };
 
-    angular.module('pokemonSite').controller('battleController', [battleController]);
+    angular.module('pokemonSite').controller('BattleController', [BattleController]);
 }());
 
-/*change everything that says dashboard or bookstore */
+
+

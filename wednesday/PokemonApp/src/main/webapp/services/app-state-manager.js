@@ -3,17 +3,19 @@
 (function () {
 
     angular.module('pokemonSite').config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/book");
+        $urlRouterProvider.otherwise("/battle");
 
-        $stateProvider.state("battler", {
-            url: "/Battler",
+
+        $stateProvider.state("battle", {
+            url: "/battle",
             templateUrl: "app/feature/PokeBattler/pokeBattle.html"
-        }).state("box", {
-            url: "/box",
-            templateUrl: "app/feature/PokeBox/pokeBox.html"
         }).state("search", {
             url:"search",
             templateUrl:"app/feature/PokeSearch/pokeSearch.html"
+        }).state("box", {
+            url: "/box",
+            templateUrl: "app/feature/PokeBox/pokeBox.html"
+
         })
     });
 }());
