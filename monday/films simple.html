@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Film Store</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+</head>
+<body ng-init="films=[{'Rogue One','Captain America Civil War','Star Trek Beyond'}]">
+<ul>
+    <li ng-repeat="film in films">{{film}}</li>
+</ul>
+</body>
+</html>

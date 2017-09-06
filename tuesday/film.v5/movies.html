@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="filmStore">
+<head>
+    <meta charset="UTF-8">
+    <title>Film Store</title>
+    <link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body ng-controller="FilmController">
+<div>
+<h1>Film List </h1>
+</div>
+<div>
+    <h2> Filter Films</h2>
+</div>
+<div id="filter">
+    <font size="3">Enter your Filter Term</font>
+  <input type="text" ng-model="filmFilter.Title">
+</div>
+<br/>
+<div>
+<table>
+    <tr>
+        <th ng-click="doSort('Title')">Title</th>
+        <th>Date</th>
+        <th>Genre</th>
+
+    </tr>
+    <tr ng-repeat="film in filmList | filter:filmFilter | orderBy:sortBy:reverse">
+
+        <td>{{film.Title | uppercase}}</td>
+        <td>{{film.Date}}</td>
+        <td>{{film.Genre}}</td>
+
+    </tr>
+</table>
+</div>
+<div>
+    <p></p>
+    <p><font size="3"><span>Total films: {{filmList.length}}</span></font></p></div>
+<p></p>
+
+<div>
+    <button ng-click="doDelete()"> Delete Last Entry </button>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<!--  note to self the app needs to be on the document before the controller-->
+<script src="app.js"></script>
+<script src="movieController.js"></script>
+
+
+</body>
+</html>

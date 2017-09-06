@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="filmStore">
+<head>
+    <meta charset="UTF-8">
+    <title>Film Store</title>
+</head>
+
+<body ng-controller="FilmController">
+
+Filter Films <input type="text" ng-model="filmFilter.Title">
+<br/>
+<table>
+    <tr>
+        <th ng-click="doSort('Title')">Title</th>
+        <th>Date</th>
+        <th>Genre</th>
+
+    </tr>
+    <tr ng-repeat="film in filmList | filter:filmFilter | orderBy:sortBy:reverse">
+
+        <td>{{film.Title | lowercase}}</td>
+        <td>{{film.Date}}</td>
+        <td>{{film.Genre}}</td>
+
+    </tr>
+</table>
+
+<span>Total films: {{filmList.length}}</span>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<!--  note to self the app needs to be on the document before the controller-->
+<script src="app.js"></script>
+<script src="controller.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookStore">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store</title>
+<link href="style/tooplate_style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table>
+    <tr>
+        <th><a ui-sref="book">Books</a></th>
+        <th> <a ui-sref="other">Other State</a></th>
+    </tr>
+</table>
+
+<div ui-view></div>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/ui-router.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/app-state-manager.js"></script>
+    <script src="app/feature/book/bookcontroller.js"></script>
+    <script src="app/feature/other/othercontroller.js"></script>
+    <script src="services/services.js" > </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Film Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
+<body ng-init="filmList=[{
+'Title':'Rogue One',
+'Date':'15/12/2016',
+'Genre':'Sci-fi'
+
+}, {
+'Title':'Captain America Civil War',
+'Date':'29/4/2016',
+'Genre':'Sci-fi'
+
+}, {
+'Title':'Star Trek Beyond',
+'Date':'25/7/2016',
+'Genre':'Sci-fi'
+}]">
+
+
+Filter films <input type="text" ng-model="filmFilter.Title">
+
+<div>
+    <table>
+        <tr>
+            <th ng-click="sortBy='title'; reverse=!reverse">Title</th>
+            <th> Date </th>
+            <th> Genre </th>
+        </tr>
+        <tr ng-repeat="film in filmList | filter:filmFilter | orderBy:sortBy:reverse">
+            <td> {{film.Title | lowercase}}</td>
+            <td> {{film.Date}}</td>
+            <td> {{film.Genre}}</td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+</body>
+
+</html>

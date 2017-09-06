@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Film list</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-init="films=[
+{Title:'Rogue One', Type: 'Sci-fi'},
+{Title:'Captain America', Type:'Superhero'},
+{Title:'Star Trek', Type:'Sci-fi'}]">
+<ul>
+    <li ng-repeat="x in films">{{x.Title}}  {{x.Type}} </li>
+</ul>
+</body>
+</html>
