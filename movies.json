@@ -1,13 +1,13 @@
 [ 
 {
-	"name" : "Okja",
-	"director" : "Bong Joon Ho",
-	"releasedate" : 2017,
-	"age" : "U",
-	"runtime" : "1 hr, 58mins",
-	"desc" : "Meet Mija, a young girl who risks everything to prevent a powerful, multi-national company from kidnapping her best friend - a fascinating animal named Okja.",
+	"name" : "Okja", 
+	"director": "Bong Joon Ho", 
+	"releaseDate": 2017, 
+	"age": "U", 
+	"runtime": 118, 
+	"desc": "IMeet Mija, a young girl who risks everything to prevent a powerful, multi-national company from kidnapping her best friend - a fascinating animal named Okja.",
 	"trailer" : "https://www.youtube.com/embed/AjCebKn4iic",
-	"img" : "/src/main/webapp/img/thumbnail/thumb.jpg",
+	"img" : "src/main/webapp/img/thumbnail/thumb.jpg",
 	"castList" : ["Susan","Mary","Johnathan","Chris","Sanders", "Billabob"]
 },
 {
