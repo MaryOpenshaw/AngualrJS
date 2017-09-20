@@ -85,7 +85,7 @@
 	"runtime": 129 ,
 	"desc": "An adaptation of the fairy tale about a monstrous-looking prince and a young woman who fall in love." ,
 	"trailer": "https://www.youtube.com/embed/iXfEc4wG208",
-	"img" : "src/main/webapp/img/movies/BeautyAndBeast.jpg",
+	"img" : "src/main/webapp/img/thumbnail/BeautyAndBeast.jpg",
 	"castList" : ["Susan","Mary","Johnathan","Chris","Sanders", "Billabob"]
 },
 {
@@ -96,7 +96,7 @@
 	"runtime": 107,
 	"desc": "In the near future, Major is the first of her kind: A human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals.",
 	"trailer": "https://www.youtube.com/embed/G4VmJcZR0Yg",
-	"img" : "src/main/webapp/img/movies/GitS_2017.jpg",
+	"img" : "src/main/webapp/img/thumbnail/GitS_2017.jpg",
 	"castList" : ["Susan","Mary","Johnathan","Chris","Sanders", "Billabob"]
 }
 ]
